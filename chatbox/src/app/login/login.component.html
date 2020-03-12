@@ -1,0 +1,25 @@
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+    <form>
+<h2 align="center">Login</h2>
+        <div class="form-group">
+<label align="center"> Username <span class="required-asterisk"> <span style="color: red;">*</span></span></label>
+<input type="text" placeholder="Username" class="form-control" [(ngModel)]="model.uname" name="userName" required/>
+</div>
+
+
+<div class="form-group">
+    <label align="center">Password <span class="required-asterisk"><span style="color: red;">*</span></span></label>
+    <input type="password" placeholder="Password" class="form-control" [(ngModel)]="model.pass" name="password" required/>
+    <br>
+<button (click)="onsubmit()" class="btn btn-info"> Submit </button>
+<br><br><br><br><br><br><br><br><br>
+</div>
+</form>
+</div>
+
+
+

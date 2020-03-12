@@ -1,0 +1,55 @@
+
+    <div class="bgimg" >
+   
+    <div class="container" >
+    <br>
+    <h1 align="center" style="color: black;" class="sticky">Let's Chat </h1>
+     <p></p>
+    <table align="center" >
+
+   
+
+        <tr *ngFor="let e of arr" align="left"> 
+
+        <div *ngIf="e.uname=='ashish'" align="left">
+
+        </div>
+      
+        <td>
+            <div class="rcorners2" style="background: darkseagreen;">
+               
+                 <b>
+                        {{e.uname }} <small>-</small>
+                        <div></div>
+                         {{e.msg}},</b>
+              <small> 
+                    {{e.currdate | date: 'short'}}
+                </small>
+
+                <button type="submit" placeholder="delete msg" class= "btn btn-danger;" (click)="delete(e.msg)"> <span style="color: red;">&times;</span></button>
+
+            </div> 
+              <br>
+         
+
+            </td> 
+        
+    </tr>
+
+</table>
+</div>
+<div class="container">
+       <form>
+       <div class="form-group"><br>
+       
+       <input type="text" style="height:300%" placeholder="Type a Message" class="form-control" [(ngModel)]="data.msg" name="msg"><br>
+       
+       <button type="submit" (click)="add()" class="btn btn-dark"><b>Send  </b></button>
+
+      <span style= "float:right" class=" btn btn-danger;">
+         <button type="submit"   (click)="logout()" class="btn btn-dark"> Logout </button>
+        </span>
+       </div>
+       </form><br><br><br>
+   </div>
+  </div>

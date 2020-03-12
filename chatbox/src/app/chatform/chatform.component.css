@@ -1,0 +1,26 @@
+.rcorners2 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px;
+    width: auto;
+    height: auto;
+  }
+.bgimg{
+    background-image: url("src\assets\327141.jpg");
+}
+
+    .obliquee {
+        font-style: italic;
+      
+}
+.topright {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+  }
+  .sticky {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+  }
