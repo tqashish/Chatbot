@@ -24,7 +24,7 @@ if(this.model.uname==="sankalp" && this.model.pass === "1234")
 {
 localStorage.setItem("loginKey",JSON.stringify(this.model.uname));
 Swal.fire(
-  'Sankalp Login'
+  'Welcome Sankalp'
 )
 this.service.login=true; 
 this.r.navigate(['/chatform'])
@@ -35,7 +35,7 @@ localStorage.setItem("loginKey",JSON.stringify(this.model.uname));
 this.service.login=true; 
 
 Swal.fire(
-  'Ashish Login'
+  'Welcome Ashish :)'
 )
 
 this.r.navigate(['/chatform'])
